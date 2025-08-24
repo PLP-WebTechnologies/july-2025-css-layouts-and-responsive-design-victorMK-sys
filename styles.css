@@ -1,0 +1,230 @@
+* {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  max-width: 100%;
+  background-color: salmon;
+  position: fixed;
+  top: 0;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: hsl(0, 0%, 100%);
+  width: 100%;
+  box-shadow: 0px 0px 10px hsl(0, 0%, 20%);
+  z-index: 100;
+}
+
+.header-logo {
+  margin-left: 10px;
+  font-size: 25px;
+  color: hsl(16, 100%, 50%);
+}
+
+.nav-link-container ul {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+  padding: 5px 10px;
+}
+
+#nav-links a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  color: hsl(0, 0%, 20%);
+}
+
+#nav-links a:hover {
+  color: hsl(16, 100%, 50%);
+}
+
+#sidebar {
+  background-color: hsl(0, 0%, 98%);
+  text-align: center;
+  position: fixed;
+  top: 50px;
+  bottom: 0;
+  left: 0;
+  padding-top: 50px;
+}
+
+#sidebar ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#sidebar-links {
+  background-color: hsl(0, 0%, 95%);
+  border-top: 1px solid hsl(0, 0%, 85%);
+  font-weight: bold;
+  color: hsl(0, 0%, 40%);
+  padding: 20px 0;
+  cursor: pointer;
+}
+
+#sidebar-links:hover {
+  background-color: hsl(16, 100%, 50%);
+  color: white;
+}
+
+main {
+  margin: 80px 0 0 100px;
+}
+
+#skills,
+#tools {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  border-radius: 20px;
+  background-color: hsl(0, 0%, 90%);
+  padding: 50px 10px;
+}
+
+#skills h2,
+#tools h2 {
+  color: hsl(16, 100%, 50%);
+  font-size: 40px;
+}
+
+#skills h3 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.skill-container ul {
+  list-style: none;
+  line-height: 25px;
+}
+
+.skill-container ul li {
+  background-color: hsl(0, 0%, 75%);
+  display: inline;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 0 5px;
+}
+
+#tools {
+  display: flex;
+  gap: 20px;
+}
+
+.tool-list ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  list-style: none;
+}
+
+.tool-list ul li {
+  background: hsl(18, 100%, 95%);
+  padding: 10px;
+  max-width: 50%;
+  border-radius: 10px;
+  border-left: 5px solid hsl(16, 100%, 50%);
+  font-size: 15px;
+}
+
+#projects {
+  margin: 50px 0;
+}
+
+#projects h2 {
+  font-size: 25px;
+  margin-left: 25px;
+  margin-bottom: 25px;
+}
+
+.project-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 0 20px;
+  gap: 20px;
+}
+
+.project-container {
+  background-color: hsl(0, 0%, 95%);
+  border: 1px solid hsl(16, 100%, 50%);
+  text-align: center;
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  line-height: 25px;
+  gap: 10px;
+}
+
+.project-container button {
+  background-color: hsl(16, 100%, 50%);
+  border: 1px solid hsl(16, 100%, 50%);
+  border-radius: 10px;
+  font-weight: bold;
+  color: white;
+  font-size: 17px;
+  padding: 7px 0;
+  cursor: pointer;
+}
+
+.project-container button:hover {
+  color: hsl(16, 100%, 50%);
+  background-color: hsl(0, 0%, 100%);
+}
+
+footer {
+  background-color: hsl(0, 0%, 4%);
+  color: hsl(0, 0%, 96%);
+  padding: 25px;
+  text-align: center;
+  border-top: 1px solid hsl(0, 0%, 13%);
+  font-size: 15px;
+}
+
+footer p {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 512px) {
+  main {
+    margin: 80px 10px;
+  }
+
+  .header-logo {
+    font-size: 20px;
+  }
+
+  .nav-link-container {
+    display: none;
+  }
+
+  #sidebar {
+    display: none;
+  }
+
+  #skills,
+  #tools {
+    margin: 10px 0;
+    border-radius: 20px;
+    background-color: hsl(0, 0%, 90%);
+    padding: 25px 10px;
+  }
+
+  #skills h2,
+  #tools h2 {
+    color: hsl(16, 100%, 50%);
+    font-size: 32px;
+  }
+
+  .project-main {
+    display: flex;
+    flex-direction: column;
+  }
+
+}
